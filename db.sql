@@ -1,0 +1,31 @@
+DROP DATABASE IF EXISTS form1;
+CREATE DATABASE form1;
+USE form1;
+
+DROP TABLE IF EXISTS informacion;
+CREATE TABLE informacion (
+	id INT AUTO_INCREMENT,
+	nombres VARCHAR(250) NOT NULL,
+	apellidos VARCHAR(250) NOT NULL,
+	pais VARCHAR(250) NOT NULL,
+	ciudad VARCHAR(250) NOT NULL,
+	documento_tipo VARCHAR(250) NOT NULL,
+	documento_numero VARCHAR(250) NOT NULL,
+	edad VARCHAR(250) NOT NULL,
+	experiencia VARCHAR(250) NOT NULL,
+	numero_contacto VARCHAR(250) NOT NULL,
+	correo VARCHAR(250) NOT NULL,
+	fecha_inicio DATE NOT NULL,
+	PRIMARY KEY (id)
+); ALTER TABLE informacion CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+DROP TABLE IF EXISTS usuario;
+CREATE TABLE usuario (
+	id INT AUTO_INCREMENT,
+	usuario VARCHAR(250) NOT NULL,
+	clave VARCHAR(250) NOT NULL,
+	PRIMARY KEY (id)
+); ALTER TABLE usuario CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+INSERT INTO usuario (usuario,clave) VALUES 
+('admin','71b3b26aaa319e0cdf6fdb8429c112b0');

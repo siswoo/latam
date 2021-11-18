@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="/responsi/responsive-navbar-yt-master/style.css">
+    
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+   
+</head>
+<style>
+
+    #a{
+        position: relative;
+        top: 50px;
+        margin-left: 3px;
+        margin-right: 10px;
+        color: white;
+        
+    }
+</style>
+<body>
+<div class="container-fluid" id="menu">
+
+    <div class="row" style="background-color: black;">
+        <div class="col-3">
+            <img src="img/LOGO-CAMALEON-correcion.png" class="img-fluid mt-2 mb-2 ml-3" style="">
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+              </button>
+        </div>
+        <div class="col-6 col-md-0">
+            <div class="row"> 
+                        
+                        <a id="a" href="#"></span>INICIO</a>
+                        <a id="a" href="#"></span>CURSOS</a>
+                        <a id="a" href="#"></span>TIPS CAMALEÓN</a>
+                        <a id="a" href="#"></span>MÚLTIMEDIA</a>
+                        <a id="a" href="#"></span>MEDIOS DE COMUNICACIÓN</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <img src="img/PLANETA2.png" class="img-fluid mt-2 mb-2 mr-3" >
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="/jquery-latest.js"></script>
+    <script src="menu.js"></script> 
+</body>
+</html>
+<script>
+    $(document).ready(main);
+
+var contador = 1;
+
+function main(){
+	$('.menu_bar').click(function(){
+		// $('nav').toggle(); 
+
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+
+	});
+
+};
+</script>
