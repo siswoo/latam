@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-	<div style="background: url(img/FONDO1.png) no-repeat center; background-attachment: fixed; min-height: 300px;">
+	<div style="background: url(img/fondo2.png) no-repeat center; background-attachment: fixed; min-height: 300px;">
 		<div class="col-12 text-center" style="font-size: 35px; font-weight: bold; color: white;">
 			FORMULARIO DE INSCRIPCIÓN
 		</div>
@@ -39,7 +39,7 @@
 			Información Personal
 		</div>
 		
-		<div class="container">
+		<div class="container" style="background-color: white; border-radius: 1rem;">
 			<form action="#" method="POST" id="formulario1">
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center mt-3">
@@ -94,7 +94,9 @@
 					</div>
 
 					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" style="font-size: 35px; font-weight: bold; color: black; margin-top: 2rem;">
-						<img src="img/LEE-AQUI.png" class="img-fluid" style="max-width: 400px; cursor: pointer;" data-toggle="modal" data-target="#exampleModal1">
+						<a href="terminosycondiciones.php" target="_blank">
+							<img src="img/LEE-AQUI.png" class="img-fluid" style="max-width: 400px; cursor: pointer;">
+						</a>
 					</div>
 
 					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" style="font-size: 35px; font-weight: bold; color: black; margin-top: 2rem;">
@@ -108,20 +110,26 @@
 	</div>
 
 	<div class="row" style="background: url(img/fondoPiePagina.png) no-repeat center; min-height: 400px; -webkit-background-size: cover;">
+		<div class="col-12">&nbsp;</div>
 		<div class="col-12 text-center">
 			<img src="img/LOGO2.png" class="img-fluid mt-3" style="max-width: 200px;">
 		</div>
 		<div class="col-12 text-center">
+			<a href="https://www.facebook.com/profile.php?id=100070776395766" style="text-decoration: none;" target="_blank">
+				<img src="img/FACE.png" class="img-fluid" style="max-width: 100px;">
+			</a>
+			<!--
 			<a href="https://www.facebook.com/camaleon.latam" style="text-decoration: none;" target="_blank">
 				<img src="img/FACE.png" class="img-fluid" style="max-width: 100px;">
 			</a>
-			<a href="https://www.instagram.com/camaleonmodels/" style="text-decoration: none;" target="_blank">
+			-->
+			<a href="https://www.instagram.com/webcamaleonabc/" style="text-decoration: none;" target="_blank">
 				<img src="img/INSTA.png" class="img-fluid" style="max-width: 100px;">
 			</a>
-			<a href="https://twitter.com/modelslatam?s=11" style="text-decoration: none;" target="_blank">
+			<a href="https://twitter.com/CamaleonModels" style="text-decoration: none;" target="_blank">
 				<img src="img/TWITTER.png" class="img-fluid" style="max-width: 100px;">
 			</a>
-			<a href="https://www.youtube.com/channel/UC4Sp29vYda88cXvvm17zckw" style="text-decoration: none;" target="_blank">
+			<a href="https://www.youtube.com/channel/UCYOiiDOd8X9nsEufMFfa9SA/videos" style="text-decoration: none;" target="_blank">
 				<img src="img/YOUTU.png" class="img-fluid" style="max-width: 100px;">
 			</a>
 		</div>
@@ -189,23 +197,6 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 <script type="text/javascript">
-	/**************TEST**************/
-	/*
-	$(document).ready(function() {
-		$('#nombres').val("nombres");
-		$('#apellidos').val("apellidos");
-		$('#pais').val("pais");
-		$('#ciudad').val("ciudad");
-		$('#documento_tipo').val("documento_tipo");
-		$('#documento_numero').val("documento_numero");
-		$('#edad').val("edad");
-		$('#experiencia').val("Si");
-		$('#numero_contacto').val("numero_contacto2");
-		$('#numero_contacto2').val("numero_contacto2");
-		$('#correo').val("correo@gmail.com");
-	});
-	/**************TEST**************/
-
 
 	$('#myModal').on('shown.bs.modal', function () {
 	  	$('#myInput').trigger('focus')
